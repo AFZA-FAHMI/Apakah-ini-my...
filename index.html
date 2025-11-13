@@ -26,17 +26,37 @@
   <body>
     <!-- navbar start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">MY<span>koffe</span>.</a>
+      <a href="#" class="navbar-logo">MY<span>.Game</span></a>
       <div class="navbar-nav">
         <a href="#">Home</a>
         <a href="#about">Tentang kami</a>
-        <a href="#mymenu">Menu</a>
+        <a href="#mymenu">Paket</a>
+        <a href="#product">testimoni</a>
         <a href="#contact">Kontak</a>
       </div>
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+      <!-- search form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"> <i data-feather="search"></i></label>
+      </div>
+      <!-- search form end -->
+
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/download (2)-300x300 (1).jpg" alt="produk-1" />
+          <div class="item-detail">
+            <h3>produk-1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="delete-item"></i>
+        </div>
       </div>
     </nav>
     <!-- navbar end -->
@@ -44,14 +64,15 @@
     <!-- hero section start -->
 
     <section class="hero" id="home">
-      <main class="content">
-        <h1>mari nikmati secangkir <span>kopi</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-          quisquam.
-        </p>
-        <a href="#" class="cta">beli sekarang</a>
-      </main>
+      <div class="mask-container">
+        <main class="content">
+          <h1>Stuck di Eksplorasi? <span>MY.Game solusinya!!</span></h1>
+          <p>
+            Akun aman, proses cepat, dan dikerjakan oleh gamer berpengalaman.
+          </p>
+          <!-- <a href="#" class="cta">beli sekarang</a> -->
+        </main>
+      </div>
     </section>
 
     <!-- hero section end -->
@@ -61,19 +82,22 @@
       <h2><span>Tentang</span>Kami</h2>
       <div class="row">
         <div class="about-img">
-          <img src="img/about1.jpg" alt="Tentang kami" />
+          <img src="img/download (1).jpeg" alt="Tentang kami" />
         </div>
         <div class="content">
-          <h3>kenapa memilih kopi kami</h3>
+          <h3>Kenapa Memilih Layanan Kami?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-            possimus earum velit nulla, dignissimos eius aut inventore
-            consequuntur sunt libero!
+            Keamanan Akun 100% Terjamin: Kami memprioritaskan keamanan akunmu.
+            Proses login menggunakan metode yang aman dan kami tidak akan
+            menyentuh item berhargamu.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            sunt distinctio cupiditate reprehenderit illum corporis fugit
-            temporibus, quidem est molestiae!
+            Proses Cepat & Profesional: Dikerjakan oleh tim yang berpengalaman
+            dan efisien. Progress akan selalu kami update secara berkala.
+          </p>
+          <p>
+            Harga Terjangkau: Menawarkan berbagai paket dengan harga yang
+            bersahabat untuk kantong para gamer.
           </p>
         </div>
       </div>
@@ -84,42 +108,208 @@
     <!-- menu start -->
 
     <section id="mymenu" class="menu">
-      <h2>Menu<span>Kami</span></h2>
+      <h2>Paket<span>Kami</span></h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste rem
         architecto beatae sequi voluptatum quasi?
       </p>
       <div class="row">
-        <div class="menu-card">
-          <img src="img/1.jpeg" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">-Espresso-</h3>
-          <p class="menu-card-price">IDR 15K</p>
+        <div class="menu-button">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="menu-card">
+            <img
+              src="img/download (2)-300x300 (1).jpg"
+              alt="Whuthering waves"
+              class="menu-card-img"
+            />
+          </div>
+          <div class="menu-text">
+            <h3 class="menu-card-title">-Espresso-</h3>
+            <p class="menu-card-price">IDR 15K</p>
+          </div>
         </div>
-        <div class="menu-card">
-          <img src="img/1.jpeg" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">-Espresso-</h3>
-          <p class="menu-card-price">IDR 15K</p>
+
+        <div class="menu-button">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="img/download (2)-300x300.jpg"
+              alt="Espresso"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">-Espresso-</h3>
+            <p class="menu-card-price">IDR 15K</p>
+          </div>
         </div>
-        <div class="menu-card">
-          <img src="img/1.jpeg" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">-Espresso-</h3>
-          <p class="menu-card-price">IDR 15K</p>
+
+        <div class="menu-button">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="img/Genshin Impact-300x300.jpg"
+              alt="Espresso"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">-Espresso-</h3>
+            <p class="menu-card-price">IDR 15K</p>
+          </div>
         </div>
-        <div class="menu-card">
-          <img src="img/1.jpeg" alt="Espresso" class="menu-card-img" />
-          <h3 class="menu-card-title">-Espresso-</h3>
-          <p class="menu-card-price">IDR 15K</p>
+
+        <div class="menu-button">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+
+          <div class="menu-card">
+            <img
+              src="img/download (3)-300x300.jpg"
+              alt="Espresso"
+              class="menu-card-img"
+            />
+            <h3 class="menu-card-title">-Espresso-</h3>
+            <p class="menu-card-price">IDR 15K</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- menu end -->
 
+    <!-- Product section start -->
+    <section class="product" id="product">
+      <h2><span>Testimoni</span>Pelanggan</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quod
+        nam voluptates incidunt perferendis vitae?
+      </p>
+
+      <!-- <div class="row">
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/download (2)-300x300 (1).jpg" alt="product 1" />
+          </div>
+          <div class="product-content">
+            <h3>product 1</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Genshin Impact-300x300.jpg" alt="product 1" />
+          </div>
+          <div class="product-content">
+            <h3>product 1</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="row">
+        <div
+          class="product-card"
+          data-description="Sangat puas sama joki Wuthering Waves-nya! Eksplorasi Jinzhou langsung 100%. Prosesnya cepat dan akunku aman banget. Recomended!"
+        >
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/download (2)-300x300 (1).jpg" alt="Wuthering Waves" />
+          </div>
+          <div class="product-content">
+            <h3>Testimoni Wuthering Waves</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+          </div>
+        </div>
+
+        <div
+          class="product-card"
+          data-description="Gila, joki Genshin di sini mantap. Semua Oculi di Fontaine kekumpul dalam sehari. Harganya juga oke. Bintang 5!"
+        >
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Genshin Impact-300x300.jpg" alt="Genshin Impact" />
+          </div>
+          <div class="product-content">
+            <h3>Testimoni Genshin Impact</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 40K <span>IDR 60K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product section end -->
+
     <!-- contact start -->
 
-    <!-- contact end -->
     <section id="contact" class="contact">
-      <h2><span>Kontak</span>Kami</h2>
+      <h2>Kontak<span>Kami</span></h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste rem
         architecto beatae sequi voluptatum quasi?
@@ -151,6 +341,7 @@
         </form>
       </div>
     </section>
+    <!-- contact end -->
 
     <!-- footer start -->
     <footer>
@@ -168,8 +359,9 @@
 
       <div class="link">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#mymenu">Menu</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#mymenu">Paket</a>
+        <a href="#product">testimoni</a>
         <a href="#contact">Kontak</a>
       </div>
 
@@ -178,6 +370,37 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- item detail box start -->
+    <div class="modal" id="item-detail-box">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/download (2)-300x300 (1).jpg" alt="product 1" />
+          <div class="product-content">
+            <h3>product 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              eius id cupiditate, voluptatibus earum quaerat aperiam repudiandae
+              possimus fugit soluta velit nobis, accusantium a corporis.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- item detail box end -->
+
     <!-- feather icons -->
     <script>
       feather.replace();
